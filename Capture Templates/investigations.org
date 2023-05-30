@@ -1,0 +1,32 @@
+** IN-PROGRESS Investigation#:%^{Investigaton} Date Created: %T
+:properties:
+:export_file_name: %^{filename}
+:end:
+*** Vendor
+%^{Vendor|AAAA|BBBB|CCCC|DDDD}
+*** Title
+%^{Title}
+*** Assigned:
+%^{Assigned}
+*** Contacts
+%^{Contacts}
+*** Description
+%^{Description}
+*** Questions
+1.
+2.
+3.
+*** Solutions [%]
+- [ ]
+- [ ]
+- [ ]
+*** Notes
+:LOGBOOK:
+:END:
+*** Debug/Troubleshooting Logs
+:LOGBOOK:
+:END:
+*** Email/Chat Logs
+:LOGBOOK:
+
+:END:

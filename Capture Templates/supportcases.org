@@ -1,0 +1,29 @@
+* IN-PROGRESS Case Number#:%^{Case-Number} Date Created: %T
+** Vendor
+%^{Vendor|AAAA|BBBB|CCCC}
+** Title
+%^{Title}
+** Contacts
+%^{Contacts}
+** Description
+%^{Description}
+** Notes
+:LOGBOOK:
+
+:END:
+** Questions
+1.
+2.
+3.
+** Solutions
+- [ ]
+- [ ]
+- [ ]
+** Email/Chat Logs
+:LOGBOOK:
+
+:END:
+** Debug/Troubleshooting Logs
+:LOGBOOK:
+
+:END:

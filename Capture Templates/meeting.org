@@ -1,0 +1,26 @@
+#+TITLE: Meetings Template
+#+SETUPFILE:
+#+AUTHOR:
+#+EMAIL:
+
+* Title
+
+* Date
+
+* Purpose:
+
+* Location:
+
+* Attendees:
+
+* Discussion:
+:LOGBOOK:
+
+:END:
+* Action Items:
+
+* Next Steps:
+
+* Next Meeting:
+
+* Notes:

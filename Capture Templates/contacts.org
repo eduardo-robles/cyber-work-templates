@@ -1,0 +1,10 @@
+** %^{Name} %^G
+:PROPERTIES:
+:EMAIL: %^{Email}
+:PHONE: %^{Phone}
+:ALIAS: %^{Alias}
+:NICKNAME:
+:NOTE: %^{Note}
+:ADDRESS: %^{Address}
+:BIRTHDAY:
+:END:

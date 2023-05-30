@@ -1,0 +1,3 @@
+* NEXT %^{task} %^G
+Scheduled: %T
+Captured: %u

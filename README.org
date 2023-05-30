@@ -1,0 +1,71 @@
+#+TITLE: Cybersecurity Work Org Mode Templates
+#+AUTHOR: Eduardo Robles
+#+EMAIL: eduardorobles@proton.me
+
+* Cybersecurity Work Org Mode Templates
+  :PROPERTIES:
+  :CUSTOM_ID: cybersecurity-work-orgmode-templates
+  :END:
+** About
+   :PROPERTIES:
+   :CUSTOM_ID: about
+   :END:
+In the cybersecurity work environment staying organized and good note taking is vital. You can track notes on incidents, investigations, support tickets, meeting, and much more. In my day to day work as a Cybersecurity Analyst I use [[https://www.gnu.org/software/emacs/][GNU Emacs]] and [[https://orgmode.org/][Org Mode]] to stay organized. The new and shiny applications that resemble this workflow are Obsidian, Notion, and LogSeq. The benefit of using GNU Emacs is you get to weave your documentation with actual code in a [[https://en.wikipedia.org/wiki/Literate_programming][Literate Programming]] kind of manner. This make collaboration and sharing easier and feature rich.
+
+As explained by their concept of [[https://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]], Howard Abrams states:
+
+#+BEGIN_QUOTE
+ While my literate devops approach shouldn’t replace real DevOps (OpsDev?) automation, I have found this approach useful for two reasons:
+
+ 1. As a good way to take notes before writing a cookbook.
+ 2. As an easy approach to compose emails to teammates when stuck.
+#+END_QUOTE
+
+You can extend the concepts of Literate Programming and Literate DevOps to Cybersecurity work. You find yourself stuck during a Pentest? Just ~org-mime-org-buffer-htmlize~ to export the section your stuck and send to a coworker. Howard Abrams talks about using the power of [[https://orgmode.org/worg/org-contrib/babel/][Org Babel]] and [[https://www.gnu.org/software/tramp/][Tramp]] to work with servers, VMs, and remote machines. There is nothing stopping you from doing the same with these templates. Maybe this is the start of /Literate Pentesting/?
+
+*** Prerequisites
+    :PROPERTIES:
+    :CUSTOM_ID: prerequisites
+    :END:
+- GNU Emacs 26+
+- Org Mode
+
+*** Installing
+    :PROPERTIES:
+    :CUSTOM_ID: installing
+    :END:
+- Download this repo and place the templates in your template directory or wherever you see fit.
+- Create the main document where your capture templates will be "captured" too.
+  1.
+- Setup your Org Capture templates to use these templates
+
+  For example:
+  #+BEGIN_SRC elisp
+    (setq org-capture-templates
+          '(("t" "Todo" entry (file+headline "~/Org/log.org" "Tasks")(file "~/templates/todo.org"))
+            ("c" "Contact" entry (file+headline "~/Org/contacts.org" "Work Contacts")(file "~/templates/contacts.org"))
+            ("s" "Support Case" entry (file+headline "~/documents/external/vendor_supportcases.org" "Cases")(file "~/templates/supportcases.org"))
+            ("p" "Projects" entry (file+headline "~/documents/internal/projects/projects.org" "Projects")(file "~/templates/project.org"))
+            ("e" "Issues" entry (file+headline "~/documents/internal/projects/projects.org" "Projects")(file "~/templates/issue.org"))
+            ("i" "Investigations" entry (file+headline "~/documents/internal/incident/investigations.org" "Investigations")(file "~/templates/investigations.org"))
+            ("m" "README" entry (file+headline "~/Org/READMES/all_readme_files.org" "READMES")(file "~/templates/README.org")))
+#+END_SRC
+** Usage
+   :PROPERTIES:
+   :CUSTOM_ID: usage
+   :END:
+You can create you own files to capture data into. For example I use the following scheme:
+
+- ~/documents/incidents/investigations.org~
+
+Then I capture all my data into /investigations.org/ which gets timestamped.
+** Authors
+[[https:eduardorobles.com][Eduardo Robles]] - Idea and Initial work
+** Acknowledgements
+- Literate DevOps by Howard Abrams
+** License
+#+BEGIN_EXPORT html
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+#+END_EXPORT
+** Contributions
+[[https://www.buymeacoffee.com/eduardorobles][https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png]]

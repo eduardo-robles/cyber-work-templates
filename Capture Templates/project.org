@@ -1,0 +1,14 @@
+** %^{Title} %^G
+:properties:
+:export_file_name: %^{filename}
+:end:
+*** Description
+%^{Description}
+*** Scope: [%]
+- [ ]
+- [ ]
+- [ ]
+*** Solution: [%]
+- [ ]
+- [ ]
+- [ ]

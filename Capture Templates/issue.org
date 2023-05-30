@@ -1,0 +1,29 @@
+* IN-PROGRESS Issue:%^{Issue} Date Created: %T %^G
+:properties:
+:export_file_name: %^{filename}
+:end:
+** %^{Title}
+
+** Description*
+%^{Description}
+
+** Notes
+
+
+** Questions
+1.
+2.
+3.
+
+** Solution [%]
+- [ ]
+- [ ]
+- [ ]
+
+** Contacts
+-
+
+** Email/Chat Logs
+:LOGBOOK:
+
+:END:

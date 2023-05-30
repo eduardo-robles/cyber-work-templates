@@ -1,0 +1,4 @@
+* %^{Name} Captured %^G
+%^{Note Type|note|quote|one-liner|code|link}
+Created on: %T
+%?
