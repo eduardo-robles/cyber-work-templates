@@ -71,4 +71,4 @@ Then I capture all my data into /investigations.org/ which gets timestamped.
 [[https://www.buymeacoffee.com/eduardorobles][https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png]]
 
 **** Tip with some Sats
-tacosandlinux@getalby.com
+[[https://getalby.com/p/tacosandlinux][Tip Some Sats ⚡]]
