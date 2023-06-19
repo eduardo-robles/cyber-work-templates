@@ -10,7 +10,7 @@
    :PROPERTIES:
    :CUSTOM_ID: about
    :END:
-In the cybersecurity work environment staying organized and good note taking is vital. You can track notes on incidents, investigations, support tickets, meeting, and much more. In my day to day work as a Cybersecurity Analyst I use [[https://www.gnu.org/software/emacs/][GNU Emacs]] and [[https://orgmode.org/][Org Mode]] to stay organized. The new and shiny applications that resemble this workflow are Obsidian, Notion, and LogSeq. The benefit of using GNU Emacs is you get to weave your documentation with actual code in a [[https://en.wikipedia.org/wiki/Literate_programming][Literate Programming]] kind of manner. This make collaboration and sharing easier and feature rich.
+In the cybersecurity work environment staying organized and good note taking is vital. You can track notes on incidents, investigations, support tickets, meeting, and much more. In my day to day work as a Cybersecurity Analyst, I use [[https://www.gnu.org/software/emacs/][GNU Emacs]] and [[https://orgmode.org/][Org Mode]] plus a few other tools to stay organized. The new and shiny applications that resemble this workflow are Obsidian, Notion, and LogSeq. The benefit of using GNU Emacs is you get to weave your documentation with actual code in a [[https://en.wikipedia.org/wiki/Literate_programming][Literate Programming]] kind of manner. This make collaboration and sharing easier and feature rich.
 
 As explained by their concept of [[https://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops]], Howard Abrams states:
 
@@ -21,7 +21,7 @@ As explained by their concept of [[https://howardism.org/Technical/Emacs/literat
  2. As an easy approach to compose emails to teammates when stuck.
 #+END_QUOTE
 
-You can extend the concepts of Literate Programming and Literate DevOps to Cybersecurity work. You find yourself stuck during a Pentest? Just ~org-mime-org-buffer-htmlize~ to export the section your stuck and send to a coworker. Howard Abrams talks about using the power of [[https://orgmode.org/worg/org-contrib/babel/][Org Babel]] and [[https://www.gnu.org/software/tramp/][Tramp]] to work with servers, VMs, and remote machines. There is nothing stopping you from doing the same with these templates. Maybe this is the start of /Literate Pentesting/?
+You can extend the concepts of Literate Programming and Literate DevOps to Cybersecurity work. You find yourself stuck during a Pentest? Just ~org-mime-org-buffer-htmlize~ to export the section your stuck on and send it to a coworker. Howard Abrams talks about using the power of [[https://orgmode.org/worg/org-contrib/babel/][Org Babel]] and [[https://www.gnu.org/software/tramp/][Tramp]] to work with servers, VMs, and remote machines. There is nothing stopping you from doing the same with these templates. Maybe this is the start of /Literate Pentesting/?
 
 *** Prerequisites
     :PROPERTIES:

@@ -1,0 +1,40 @@
+#+TITLE:
+#+AUTHOR:
+#+EMAIL:
+
+
+* Cases
+
+** Case Number#: 2023abd Date Created : 2023-01-10
+*** Vendor
+Super Duper Cybers Corp.
+*** Title
+EDR broke compability with Windows 10 Version 21H2
+*** Description
+We noticed issues with EDR endpoints when updating the database endpoint will lose internet.
+*** Notes
+:LOGBOOK:
+- Note taken on [2023-06-18 Sun 21:24] \\
+  Issue was first noticed when pushing updates to database
+:END:
+*** Questions
+1. Can the update be bad?
+2. Who was in charge of pushing out the update?
+*** Solutions [50%]
+- [X] Rollback update
+- [ ] Check for degradation
+
+*** Email/Chat Logs
+:LOGBOOK:
+- Note taken on [2023-06-18 Sun 21:26] \\
+  Me: What does boss say?
+  Dude: The boss says to fix ASAP!
+:END:
+
+*** Debug/Troubleshooting Logs
+:LOGBOOK:
+- Note taken on [2023-06-18 Sun 21:27] \\
+  New DB version 2.5
+- Note taken on [2023-06-18 Sun 21:27] \\
+  Old DB version 2.4
+:END:

@@ -1,0 +1,23 @@
+#+TITLE:
+#+AUTHOR:
+#+EMAIL:
+
+* Projects
+** Execute Network Scan for Vulnerabilities
+:properties:
+:export_file_name: 2023_network-vuln-scan
+:end:
+*** Description
+Execute an NMAP on the network to find vulnerabilities
+*** Scope: [%]
+- [ ] Verify NMAP scan to find vulnerabilities
+- [ ] Talk to Network team
+- [ ] Talk to Administration/Management
+*** Solution: [%]
+- [ ] Scan the subnets provided by Network team
+- [ ] Skip the scanning of web vulnerabilities
+*** Notes
+:LOGBOOK:
+- Note taken on [2023-06-18 Sun 21:43] \\
+  Find the documentation for NMAP
+:END:
