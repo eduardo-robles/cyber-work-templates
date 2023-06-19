@@ -1,4 +1,3 @@
-#+TITLE: Cybersecurity Work Org Mode Templates
 #+AUTHOR: Eduardo Robles
 #+EMAIL: eduardorobles@proton.me
 
