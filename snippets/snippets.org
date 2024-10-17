@@ -1,0 +1,81 @@
+* About
+These snippets can be save in a directory labeled "org-mode" under the snippets directory. This will activate whenever you are in /org-mode/. The snippets don't need a file extension but you should name them something relevant and easy to remember.
+* Yara
+#+begin_src
+# -*- mode: snippet -*-
+# name: New YARA rule
+# key: yara
+# --
+
+
+rule ${0:signature_name} {
+    meta:
+        description = "${1:description}"
+        md5 = ""
+        sha1 = ""
+        filename = ""
+        author = "Eduardo Robles"
+
+	Block = true
+	Log = true
+	Quarantine = false
+
+    strings:
+        $string = { 00 }
+
+    condition:
+        IsPeFile and $string
+}
+#+end_src
+* Sigma
+#+begin_src
+# -*- mode: snippet -*-
+# name: New Sigma rule
+# key: sigma-rule
+# --
+
+
+title: ${0:title}
+id: generate one here https://www.uuidgenerator.net/version4
+status: ${1:stable|test|experimental|deprecated|unsupported}
+description: ${2:description}
+references:
+    - A list of all references that can help a reader or analyst understand the meaning of a triggered rule
+tags:
+    - attack.execution  # example MITRE ATT&CK category
+    - attack.t1059      # example MITRE ATT&CK technique id
+    - car.2014-04-003   # example CAR id
+author: Eduardo Robles
+date: ${3:date}
+logsource:                      # important for the field mapping in predefined or your additional config files
+    category: process_creation  # In this example we choose the category 'process_creation'
+    product: windows            # the respective product
+detection:
+    selection:
+        FieldName: 'StringValue'
+        FieldName: IntegerValue
+        FieldName|modifier: 'Value'
+    condition: selection
+fields:
+    - fields in the log source that are important to investigate further
+falsepositives:
+    - describe possible false positive conditions to help the analysts in their investigation
+level: one of five levels (informational, low, medium, high, critical)
+#+end_src
+* Snort
+#+begin_src
+# -*- mode: snippet -*-
+# name: New Snort rule
+# key: snort rule
+# --
+
+${0}alert tcp $EXTERNAL_NET 80 -> $HOME_NET any
+(
+    msg:"Attack attempt!";
+    flow:to_client,established;
+    file_data;
+    content:"1337 hackz 1337",fast_pattern,nocase;
+    service:http;
+    sid:1;
+)
+#+end_src
