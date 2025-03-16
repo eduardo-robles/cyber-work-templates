@@ -31,7 +31,7 @@ rule ${0:signature_name} {
 #+begin_src
 # -*- mode: snippet -*-
 # name: New Sigma rule
-# key: sigma-rule
+# key: sigma
 # --
 
 
@@ -66,7 +66,7 @@ level: one of five levels (informational, low, medium, high, critical)
 #+begin_src
 # -*- mode: snippet -*-
 # name: New Snort rule
-# key: snort rule
+# key: snort
 # --
 
 ${0}alert tcp $EXTERNAL_NET 80 -> $HOME_NET any
@@ -78,4 +78,31 @@ ${0}alert tcp $EXTERNAL_NET 80 -> $HOME_NET any
     service:http;
     sid:1;
 )
+#+end_src
+* OSquery
+#+begin_src
+# -*- mode: snippet -*-
+# name: New OSquery
+# key: osq
+# --
+
+SELECT ${0} FROM ${1};
+#+end_src
+* Velociraptor VQL
+#+begin_src
+# -*- mode: snippet -*-
+# name: New VQL
+# key: vql
+# --
+
+SELECT ${0} FROM ${1}
+#+end_src
+* Rapid7 LEQL
+#+begin_src
+# -*- mode: snippet -*-
+# name: New R7 LEQL
+# key: leql
+# --
+
+where(${0})
 #+end_src
