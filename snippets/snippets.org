@@ -1,7 +1,7 @@
 * About
 These snippets can be save in a directory labeled "org-mode" under the snippets directory. This will activate whenever you are in /org-mode/. The snippets don't need a file extension but you should name them something relevant and easy to remember.
 * Yara
-#+begin_src
+#+begin_src yara
 # -*- mode: snippet -*-
 # name: New YARA rule
 # key: yara
@@ -28,7 +28,7 @@ rule ${0:signature_name} {
 }
 #+end_src
 * Sigma
-#+begin_src
+#+begin_src yaml
 # -*- mode: snippet -*-
 # name: New Sigma rule
 # key: sigma
@@ -63,7 +63,7 @@ falsepositives:
 level: one of five levels (informational, low, medium, high, critical)
 #+end_src
 * Snort
-#+begin_src
+#+begin_src lua
 # -*- mode: snippet -*-
 # name: New Snort rule
 # key: snort
@@ -80,7 +80,7 @@ ${0}alert tcp $EXTERNAL_NET 80 -> $HOME_NET any
 )
 #+end_src
 * OSquery
-#+begin_src
+#+begin_src sql
 # -*- mode: snippet -*-
 # name: New OSquery
 # key: osq
@@ -89,7 +89,7 @@ ${0}alert tcp $EXTERNAL_NET 80 -> $HOME_NET any
 SELECT ${0} FROM ${1};
 #+end_src
 * Velociraptor VQL
-#+begin_src
+#+begin_src sql
 # -*- mode: snippet -*-
 # name: New VQL
 # key: vql
@@ -98,7 +98,7 @@ SELECT ${0} FROM ${1};
 SELECT ${0} FROM ${1}
 #+end_src
 * Rapid7 LEQL
-#+begin_src
+#+begin_src sql
 # -*- mode: snippet -*-
 # name: New R7 LEQL
 # key: leql
